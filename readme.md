@@ -34,3 +34,8 @@ QMK is developed and maintained by Jack Humbert of OLKB with contributions from 
 ## Official Website
 
 [qmk.fm](https://qmk.fm) is the official website of QMK, where you can find links to this page, the documentation, and the keyboards supported by QMK.
+
+## Compile command for aleksejs1
+```
+qmk compile -kb lily58 -km aleksejs1 && mv ./lily58_rev1_aleksejs1.hex ./aleksejs1_builds/lily58_rev1_aleksejs1_$(date +%Y_%m_%d_%H_%M).hex
+```
