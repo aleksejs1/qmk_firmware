@@ -118,9 +118,9 @@ const uint16_t PROGMEM dollar[] = {KC_3, KC_4, COMBO_END};
 const uint16_t PROGMEM upp[] = {KC_6, KC_7, COMBO_END};
 const uint16_t PROGMEM amper[] = {KC_7, KC_8, COMBO_END};
 const uint16_t PROGMEM homee[] = {KC_C, KC_V, COMBO_END};
-const uint16_t PROGMEM homeeAlt[] = {KC_A, KC_S, KC_D, COMBO_END};
+const uint16_t PROGMEM homeeAlt[] = {KC_Z, KC_X, KC_C, COMBO_END};
 const uint16_t PROGMEM endd[] = {KC_V, KC_B, COMBO_END};
-const uint16_t PROGMEM enddAlt[] = {KC_S, KC_D, KC_F, COMBO_END};
+const uint16_t PROGMEM enddAlt[] = {KC_X, KC_C, KC_V, COMBO_END};
 
 combo_t key_combos[] = {
 //    COMBO(lay4, MO(_LOL)),
