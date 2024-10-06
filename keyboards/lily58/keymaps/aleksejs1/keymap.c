@@ -48,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      KC_LSFT ,    KC_INS    ,   KC_PGUP    ,   KC_PGDN    ,   KC_HOME    , KC_END, _______,     _______, KC_BSLS,   KC_LBRC   ,   KC_RBRC   ,   KC_LCBR   ,     KC_RCBR    , KC_PIPE , 
 /* \------------------------+--------------+--------------+--------------+-------+---------/  \--------+--------+-------------+-------------+-------------+--------------------------/ */
 /*                          |              |              |              |       |                     |        |             |             |             |                            */
-                                _______    ,   _______    ,   _______    ,_______,                       _______,    MO(3)    ,   _______   ,   _______
+                                _______    ,   _______    ,   _______    , KC_ENT,                       _______,    MO(3)    ,   _______   ,   _______
 /*                           \---------------------------------------------------/                     \--------------------------------------------------/                            */
 ),
 
@@ -119,8 +119,10 @@ const uint16_t PROGMEM upp[] = {KC_6, KC_7, COMBO_END};
 const uint16_t PROGMEM amper[] = {KC_7, KC_8, COMBO_END};
 const uint16_t PROGMEM homee[] = {KC_C, KC_V, COMBO_END};
 const uint16_t PROGMEM homeeAlt[] = {KC_Z, KC_X, KC_C, COMBO_END};
+const uint16_t PROGMEM homeeAlt2[] = {LGUI_T(KC_A) , RALT_T(KC_S) , LSFT_T(KC_D), COMBO_END};
 const uint16_t PROGMEM endd[] = {KC_V, KC_B, COMBO_END};
 const uint16_t PROGMEM enddAlt[] = {KC_X, KC_C, KC_V, COMBO_END};
+const uint16_t PROGMEM enddAlt2[] = {RALT_T(KC_S), LSFT_T(KC_D) , LCTL_T(KC_F), COMBO_END};
 
 combo_t key_combos[] = {
 //    COMBO(lay4, MO(_LOL)),
@@ -132,8 +134,10 @@ combo_t key_combos[] = {
     COMBO(dollar, UC(0x0036)), // $
     COMBO(upp, UC(0x0094)), // ^
     COMBO(amper, UC(0x0038)), // &
-    COMBO(homeeAlt, KC_HOME),
-    COMBO(enddAlt, KC_END),
+//    COMBO(homeeAlt, KC_HOME),
+    COMBO(homeeAlt2, KC_HOME),
+//    COMBO(enddAlt, KC_END),
+    COMBO(enddAlt2, KC_END),
 };
 
 // layer_state_t layer_state_set_user(layer_state_t state) {
